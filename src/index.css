@@ -7,6 +7,15 @@
     margin: 0 auto;
     /* width: 95%; */
   }
+  .center2 {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .padding-auto {
+    padding: 0 2rem;
+    width: 80%;
+  }
   .primary {
     background-color: #f3eed9;
   }
