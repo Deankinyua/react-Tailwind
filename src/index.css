@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .center {
+    margin: 0 auto;
+    /* width: 95%; */
+  }
+  .primary {
+    background-color: #f3eed9;
+  }
+  .secondary {
+    background-color: #824936;
+  }
+  .tertiary {
+    background-color: #222c2a;
+  }
+  .text-color {
+    color: #824936;
+  }
+}
