@@ -1,7 +1,8 @@
-import "./App.css";
-import Checkbox from "./components/Checkbox";
-import ListGroup from "./components/ListGroup";
+// import Checkbox from "./components/Checkbox";
 // import Challenge from "./components/challenge";
+import "./App.css";
+import Alert from "./components/Alert";
+import ListGroup from "./components/ListGroup";
 
 function App() {
   const items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
@@ -20,7 +21,9 @@ function App() {
         onSelectItem={handleSelectItem}
       ></ListGroup>
 
-      <Checkbox></Checkbox>
+      <Alert>Fruits</Alert>
+
+      {/* <Checkbox></Checkbox> */}
       {/* <Challenge /> */}
     </>
   );

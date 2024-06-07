@@ -8,7 +8,7 @@ type Props = {
 
 const ListGroup = ({ items, heading, onSelectItem }: Props) => {
   // items = [];
-  const [selectedIndex, setSelectedINdex] = useState(-1);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <>
@@ -20,7 +20,7 @@ const ListGroup = ({ items, heading, onSelectItem }: Props) => {
             <li
               key={item}
               onClick={() => {
-                setSelectedINdex(index);
+                setSelectedIndex(index);
                 onSelectItem(item);
               }}
               className={
@@ -31,6 +31,7 @@ const ListGroup = ({ items, heading, onSelectItem }: Props) => {
             </li>
           ))}
         </ul>
+        <button className="btn w-16">Button</button>
       </div>
     </>
   );
