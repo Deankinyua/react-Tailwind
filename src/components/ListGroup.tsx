@@ -9,6 +9,7 @@ type Props = {
 const ListGroup = ({ items, heading, onSelectItem }: Props) => {
   // items = [];
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [state, setState] = useState(false);
 
   return (
     <>
@@ -31,7 +32,23 @@ const ListGroup = ({ items, heading, onSelectItem }: Props) => {
             </li>
           ))}
         </ul>
-        <button className="btn w-16">Button</button>
+        <p className={state === false ? "hidden" : ""}>item is opened</p>
+        <button
+          className="btn w-16"
+          onClick={() => {
+            setState(true);
+          }}
+        >
+          open
+        </button>
+        <button
+          className="btn w-16"
+          onClick={() => {
+            setState(false);
+          }}
+        >
+          close
+        </button>
       </div>
     </>
   );

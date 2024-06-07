@@ -22,9 +22,9 @@ function App() {
       ></ListGroup>
 
       <Alert>Fruits</Alert>
-
-      {/* <Checkbox></Checkbox> */}
-      {/* <Challenge /> */}
+      {/* 
+      <Checkbox></Checkbox>
+      <Challenge /> */}
     </>
   );
 }
