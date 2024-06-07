@@ -28,4 +28,7 @@
   .text-color {
     color: #824936;
   }
+  .auto_grid {
+    grid-template-columns: auto 1fr;
+  }
 }
