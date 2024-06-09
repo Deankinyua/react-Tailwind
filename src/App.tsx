@@ -3,6 +3,7 @@
 import "./App.css";
 import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
+import State from "./components/State";
 
 function App() {
   const items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
@@ -25,6 +26,7 @@ function App() {
       {/* 
       <Checkbox></Checkbox>
       <Challenge /> */}
+      <State></State>
     </>
   );
 }
