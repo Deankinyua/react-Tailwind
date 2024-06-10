@@ -4,7 +4,7 @@ const challenge = () => {
   return (
     <>
       <div>
-        <div className="mb-1 p-4 center sm:p-7 primary">
+        <div className="mb-1 p-4 center sm:p-7 sm:text-red-800 primary">
           <div className="center sm:padding-auto">
             <div className="center mb-2  w-1/2">
               {/* targeting a uppercase utility for the range sm -> lg */}
