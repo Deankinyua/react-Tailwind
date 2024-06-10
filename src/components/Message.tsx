@@ -3,6 +3,18 @@ import { useState } from "react";
 let count = 0;
 
 const Message = () => {
+  const [tags, setTags] = useState(["Happy", "Sad"]);
+
+  const handleClick = () => {
+    // Updating an array
+    setTags([...tags, "Exciting"]);
+    // Removing an item from an array
+    setTags(tags.filter((tag) => tag !== "Happy"));
+    // updating an object
+
+    setTags(tags.map((tag) => (tag === "Happy" ? "Sad" : tag)));
+  };
+
   const [drink, setDrink] = useState({
     title: "Americano",
     color: "orange",
