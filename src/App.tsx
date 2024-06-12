@@ -1,8 +1,11 @@
 // import Checkbox from "./components/Checkbox";
 // import Challenge from "./components/challenge";
+import { useState } from "react";
 import "./App.css";
 import Message from "./components/Message";
 import State from "./components/State";
+import StateSharing from "./components/StateSharing";
+import CartCount from "./components/CartCount";
 // import Alert from "./components/Alert";
 // import ListGroup from "./components/ListGroup";
 // import State from "./components/State";
@@ -12,6 +15,13 @@ function App() {
   // const handleSelectItem = (item: string) => {
   //   console.log(item);
   // };
+
+  const [cartItems, setCartItems] = useState([
+    "Item1",
+    "Item2",
+    "Item3",
+    "Item4",
+  ]);
 
   return (
     <>
@@ -30,6 +40,11 @@ function App() {
       {/* <Challenge /> */}
       <State></State>
       <Message></Message>
+      <StateSharing
+        cartItems={cartItems}
+        onClear={() => setCartItems([])}
+      ></StateSharing>
+      <CartCount cartItemsCount={cartItems.length}></CartCount>
     </>
   );
 }
