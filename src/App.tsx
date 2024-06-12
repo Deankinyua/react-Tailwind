@@ -6,6 +6,7 @@ import Message from "./components/Message";
 import State from "./components/State";
 import StateSharing from "./components/StateSharing";
 import CartCount from "./components/CartCount";
+import Game from "./components/Game";
 // import Alert from "./components/Alert";
 // import ListGroup from "./components/ListGroup";
 // import State from "./components/State";
@@ -45,6 +46,7 @@ function App() {
         onClear={() => setCartItems([])}
       ></StateSharing>
       <CartCount cartItemsCount={cartItems.length}></CartCount>
+      <Game></Game>
     </>
   );
 }
